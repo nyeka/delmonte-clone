@@ -29,7 +29,7 @@ const Home: NextPage = () => {
         <meta property="og:title" content="Delmonte-clone" />
         <meta
           property="og:image"
-          content="https://www.pcgamesn.com/wp-content/uploads/2021/08/genshin-impact-baal-build-raiden-shogun.jpg"
+          content="https://delmonte-clone-guzy2gqrt-nyeka.vercel.app/bg.svg"
         />
         <meta
           property="og:description"
