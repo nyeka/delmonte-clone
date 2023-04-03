@@ -29,7 +29,7 @@ const Home: NextPage = () => {
         <meta property="og:title" content="Delmonte-clone" />
         <meta
           property="og:image"
-          content="https://delmonte-clone-guzy2gqrt-nyeka.vercel.app/bg.svg"
+          content="https://www.delmonte.com/sites/default/files/banner//2022-11/Unique%20Veg_0.jpg"
         />
         <meta
           property="og:description"
@@ -39,7 +39,7 @@ const Home: NextPage = () => {
         <meta property="og:url" content="https://delmonte.vercel.app/" />
         <meta
           property="og:image"
-          content="https://www.pcgamesn.com/wp-content/uploads/2021/08/genshin-impact-baal-build-raiden-shogun.jpg"
+          content="https://www.delmonte.com/sites/default/files/banner//2022-11/Unique%20Veg_0.jpg"
         />
         <meta property="og:image:secure_url" content={"/bg.svg"} />
         <meta property="og:image:width" content="640" />
@@ -48,7 +48,7 @@ const Home: NextPage = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:image"
-          content="https://www.pcgamesn.com/wp-content/uploads/2021/08/genshin-impact-baal-build-raiden-shogun.jpg"
+          content="https://www.delmonte.com/sites/default/files/banner//2022-11/Unique%20Veg_0.jpg"
         />
         <meta name="twitter:title" content="Nyoman Eka" />
         <meta
