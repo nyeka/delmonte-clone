@@ -37,13 +37,19 @@ const Home: NextPage = () => {
         />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://delmonte.vercel.app/" />
-        <meta property="og:image" content={`/bg.svg`} />
+        <meta
+          property="og:image"
+          content="https://www.pcgamesn.com/wp-content/uploads/2021/08/genshin-impact-baal-build-raiden-shogun.jpg"
+        />
         <meta property="og:image:secure_url" content={"/bg.svg"} />
         <meta property="og:image:width" content="640" />
         <meta property="og:image:height" content="640" />
         <meta property="og:image:alt" content="Nyoman Eka Swardita" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:image" content={bg} />
+        <meta
+          name="twitter:image"
+          content="https://www.pcgamesn.com/wp-content/uploads/2021/08/genshin-impact-baal-build-raiden-shogun.jpg"
+        />
         <meta name="twitter:title" content="Nyoman Eka" />
         <meta
           name="twitter:description"
