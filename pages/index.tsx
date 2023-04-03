@@ -27,7 +27,10 @@ const Home: NextPage = () => {
         <meta property="og:locale" content="id_ID" />
         <meta property="og:locale:alternate" content="ms_MY" />
         <meta property="og:title" content="Delmonte-clone" />
-        <meta property="og:image" content={bg} />
+        <meta
+          property="og:image"
+          content="https://www.pcgamesn.com/wp-content/uploads/2021/08/genshin-impact-baal-build-raiden-shogun.jpg"
+        />
         <meta
           property="og:description"
           content="Delmonte Web Clone | Dikelola oleh Nyoman Eka Swardita"
@@ -40,7 +43,7 @@ const Home: NextPage = () => {
         <meta property="og:image:height" content="640" />
         <meta property="og:image:alt" content="Nyoman Eka Swardita" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:image" content={"/bg.svg"} />
+        <meta name="twitter:image" content={bg} />
         <meta name="twitter:title" content="Nyoman Eka" />
         <meta
           name="twitter:description"
