@@ -29,6 +29,7 @@ export default function Page() {
 
     const filepath = data.path; // save filepath in database
     setProductImage(filepath);
+    console.log(error);
   };
 
   const handler = async () => {
