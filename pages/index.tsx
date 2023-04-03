@@ -3,6 +3,7 @@ import Head from "next/head";
 import HomePage from "../components/home";
 import Navbar from "../components/navbar";
 import Products from "../components/products";
+import bg from "../public/bg.svg";
 
 const Home: NextPage = () => {
   return (
@@ -26,12 +27,7 @@ const Home: NextPage = () => {
         <meta property="og:locale" content="id_ID" />
         <meta property="og:locale:alternate" content="ms_MY" />
         <meta property="og:title" content="Delmonte-clone" />
-        <meta
-          property="og:image"
-          content={
-            "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fassets.gamepur.com%2Fwp-content%2Fuploads%2F2021%2F10%2F11220107%2FRaiden-Shogun.jpg&f=1&nofb=1&ipt=77903d2d668900fc6440219f53211216a4a304bb72193c1f7bcdef1c6c861008&ipo=images"
-          }
-        />
+        <meta property="og:image" content={bg} />
         <meta
           property="og:description"
           content="Delmonte Web Clone | Dikelola oleh Nyoman Eka Swardita"
