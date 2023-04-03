@@ -29,7 +29,6 @@ const Home: NextPage = () => {
         <meta
           property="og:image"
           content={
-            "/bg.svg" ||
             "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fassets.gamepur.com%2Fwp-content%2Fuploads%2F2021%2F10%2F11220107%2FRaiden-Shogun.jpg&f=1&nofb=1&ipt=77903d2d668900fc6440219f53211216a4a304bb72193c1f7bcdef1c6c861008&ipo=images"
           }
         />
