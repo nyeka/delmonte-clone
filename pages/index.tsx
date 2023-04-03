@@ -12,7 +12,7 @@ const Home: NextPage = () => {
           name="google-site-verification"
           content="dQvIQjf3MbluGD75wW444KQ7V33Zpq-s-FMBhlFejBg"
         />
-        <title>Dimas Miftah</title>
+        <title>Delmonte | Nyoman</title>
         <meta charSet="utf-8" />
         <meta
           name="viewport"
