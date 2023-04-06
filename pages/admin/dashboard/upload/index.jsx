@@ -1,9 +1,28 @@
 import { useState } from "react";
-import { supabase } from "../../components/supabase";
+import { supabase } from "../../../../components/supabase";
 import { v4 as uuidv4 } from "uuid";
 import axios from "axios";
 
-export default function Page() {
+import { getSession } from "next-auth/react";
+
+export async function getServerSideProps(context) {
+  const session = await getSession(context);
+
+  if (!session) {
+    return {
+      redirect: {
+        destination: "/admin/login",
+        permanent: false,
+      },
+    };
+  }
+
+  return {
+    props: { session },
+  };
+}
+
+export default function index() {
   const [file, setfile] = useState([]);
   const [productImage, setProductImage] = useState("");
   const [productsData, setProductsData] = useState({
@@ -18,7 +37,7 @@ export default function Page() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const filename = `${uuidv4()}-${file.name}`;
+    const filename = `${uuidv4()}`;
 
     const { data, error } = await supabase.storage
       .from("delmonte")
@@ -67,8 +86,6 @@ export default function Page() {
           Submit
         </button>
       </form>
-
-      <img src={file} />
     </>
   );
 }
