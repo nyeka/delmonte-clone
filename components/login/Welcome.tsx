@@ -9,7 +9,7 @@ const Welcome = () => {
           Delmonte
         </Text>
         <p className="text-[#64748B] text-[16px] max-w-[362px] text-center">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit suspendisse.
+          Lorem ipsum dolor sit amat, consectetur adipiscing elit suspendisse.
         </p>
       </div>
       <img src={"/login.svg"} alt={"login page"} />
