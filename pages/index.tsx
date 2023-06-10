@@ -6,6 +6,7 @@ import Products from "../components/products";
 import Recipes from "../components/recipes";
 import Profile from "../components/profile";
 import Partner from "../components/partnership";
+import Footer from "../components/footer";
 
 const Home: NextPage = () => {
   return (
@@ -85,6 +86,7 @@ const Home: NextPage = () => {
       <Recipes />
       <Profile />
       <Partner />
+      <Footer />
     </div>
   );
 };
