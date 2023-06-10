@@ -9,7 +9,7 @@ export default async function handler(
 ) {
   try {
     if (req.method === "GET") {
-      const products = await Prisma.products.findMany();
+      const products = await Prisma.Products.findMany();
       res.status(200).json({ message: "succes", products });
     } else {
       res.status(400).json({ message: "Invalid request" });

@@ -31,7 +31,7 @@ const Navbar = () => {
           <li>FAQ</li>
           <li>Partnership</li>
         </ul>
-        <button className="bg-[#006B35] px-[12px] rounded-[32px] text-[#fff]  text-center py-[5px]">
+        <button className="bg-[#580AC7] px-[12px] rounded-[32px] text-[#fff]  text-center py-[7px]">
           Get In Touch
         </button>
       </div>

@@ -19,7 +19,7 @@ const HomePage = () => {
             With No GMO Ingridients and no artificial colors or flavor
           </p>
         </div>
-        <button className="bg-[#006B35] rounded-[16px] w-[119px] h-[42px]">
+        <button className="bg-[#580AC7] rounded-[16px] w-[119px] h-[42px]">
           Try Today
         </button>
       </div>
