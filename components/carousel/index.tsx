@@ -8,6 +8,7 @@ import {
 } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
 import { Box } from "@mui/material";
+import { MdOutlineNavigateNext, MdOutlineNavigateBefore } from "react-icons/md";
 
 const CarauselSponsor: FC = () => {
   // const rqAllProgramme = useQuery(['programmeAllType'], async () => await RestProgrammAll())
@@ -29,28 +30,6 @@ const CarauselSponsor: FC = () => {
           naturalSlideHeight={0}
         >
           <div className="w-full relative flex items-center justify-center">
-            <ButtonBack
-              role="button"
-              aria-label="slide backward"
-              className="absolute z-30 bg-primary p-3 rounded-full opacity-20 left-0 ml-8 focus:outline-none hover:opacity-40 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 cursor-pointer"
-              id="prev"
-            >
-              <svg
-                width={8}
-                height={14}
-                viewBox="0 0 8 14"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M7 1L1 7L7 13"
-                  stroke="white"
-                  strokeWidth={2}
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </ButtonBack>
             <div className="w-full h-full mx-auto overflow-x-hidden overflow-y-hidden">
               <Slider>
                 <div
@@ -69,7 +48,7 @@ const CarauselSponsor: FC = () => {
                             src={el}
                             draggable={false}
                             alt="sponsor"
-                            width={350}
+                            width={250}
                             height={150}
                           />
                         </div>
@@ -79,34 +58,20 @@ const CarauselSponsor: FC = () => {
                 </div>
               </Slider>
             </div>
-            <ButtonNext
-              role="button"
-              aria-label="slide forward"
-              className="absolute z-30 bg-primary p-3 rounded-full opacity-20 right-0 mr-8 focus:outline-none hover:opacity-40 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400"
-              id="next"
-            >
-              <svg
-                width={8}
-                height={14}
-                viewBox="0 0 8 14"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M1 1L7 7L1 13"
-                  stroke="white"
-                  strokeWidth={2}
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
+          </div>
+          <div className="flex justify-center gap-[24px] mt-[24px]">
+            <ButtonBack role="button" aria-label="slide backward" id="prev">
+              <MdOutlineNavigateBefore size={40} color="red" />
+            </ButtonBack>
+            <ButtonNext role="button" aria-label="slide forward" id="next">
+              <MdOutlineNavigateNext size={40} color="red" />
             </ButtonNext>
           </div>
         </CarouselProvider>
 
         {/* carausel in screen small */}
         <CarouselProvider
-          className="md:hidden sm:block "
+          className="md:hidden sm:block"
           naturalSlideWidth={50}
           isIntrinsicHeight={true}
           totalSlides={sponsorItems.length - 1}
@@ -118,39 +83,17 @@ const CarauselSponsor: FC = () => {
           naturalSlideHeight={0}
         >
           <div className="relative flex items-center justify-center">
-            <ButtonBack
-              role="button"
-              aria-label="slide backward"
-              className="absolute z-30  left-0 ml-8 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400 cursor-pointer"
-              id="prev"
-            >
-              <svg
-                width={8}
-                height={14}
-                viewBox="0 0 8 14"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M7 1L1 7L7 13"
-                  stroke="white"
-                  strokeWidth={2}
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </ButtonBack>
             <div className="w-screen h-full overflow-x-hidden overflow-y-hidden">
               <Slider>
                 <div
                   id="slider"
-                  className="h-full flex lg:gap-8 md:gap-6 gap-14 items-center justify-start transition ease-out duration-700"
+                  className="h-fit flex lg:gap-8 md:gap-6 gap-14 items-center justify-start transition ease-out duration-700"
                 >
                   {sponsorItems.map((el, idx) => (
                     <Slide index={idx} key={idx}>
-                      <div className="flex flex-shrink-0 relative w-full sm:w-auto">
+                      <div className="flex flex-shrink-0 relative w-screen">
                         <Box
-                          className="mx-2 sm:30 md:h-80 flex items-center"
+                          className="mx-2 sm:30 md:h-80 flex justify-center items-center"
                           data-aos="zoom-in"
                           data-aos-duration="500"
                         >
@@ -158,8 +101,8 @@ const CarauselSponsor: FC = () => {
                             src={el}
                             draggable={false}
                             alt="sponsor"
-                            width={350}
-                            height={150}
+                            width={220}
+                            height={100}
                           />
                         </Box>
                       </div>
@@ -168,27 +111,13 @@ const CarauselSponsor: FC = () => {
                 </div>
               </Slider>
             </div>
-            <ButtonNext
-              role="button"
-              aria-label="slide forward"
-              className="absolute z-30 right-0 mr-8 focus:outline-none focus:bg-gray-400 focus:ring-2 focus:ring-offset-2 focus:ring-gray-400"
-              id="next"
-            >
-              <svg
-                width={8}
-                height={14}
-                viewBox="0 0 8 14"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M1 1L7 7L1 13"
-                  stroke="white"
-                  strokeWidth={2}
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
+          </div>
+          <div className="flex justify-center gap-[24px]">
+            <ButtonBack role="button" aria-label="slide backward" id="prev">
+              <MdOutlineNavigateBefore size={40} color="red" />
+            </ButtonBack>
+            <ButtonNext role="button" aria-label="slide forward" id="next">
+              <MdOutlineNavigateNext size={40} color="red" />
             </ButtonNext>
           </div>
         </CarouselProvider>
