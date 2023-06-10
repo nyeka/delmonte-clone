@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const Navbar = () => {
   const [color, setColor] = React.useState<String>("transparent");
@@ -23,7 +24,7 @@ const Navbar = () => {
       <div>
         <Image width={70} height={70} src={"/delmonte.svg"} alt="delmonte" />
       </div>
-      <div className="flex gap-[32px]">
+      <div className="hidden sm:flex gap-[32px]">
         <ul className="flex gap-[24px] font-[600] text-[18px]">
           <li>Products</li>
           <li>Recipes</li>

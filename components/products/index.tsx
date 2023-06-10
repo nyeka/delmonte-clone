@@ -2,6 +2,7 @@ import React from "react";
 import TextHeader from "../headertext";
 import axios from "axios";
 import { supabase } from "../supabase";
+import { GetServerSideProps } from "next";
 
 type Products = {
   id: string;
@@ -22,7 +23,6 @@ const Products = () => {
       .then((res) => {
         // console.log(res.data.products);
         setProducts(res.data);
-        console.log(products);
       })
       .catch((err) => {
         console.log(err);
