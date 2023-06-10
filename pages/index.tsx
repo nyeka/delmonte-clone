@@ -3,7 +3,8 @@ import Head from "next/head";
 import HomePage from "../components/home";
 import Navbar from "../components/navbar";
 import Products from "../components/products";
-import bg from "../public/bg.svg";
+import Recipes from "../components/recipes";
+import Profile from "../components/profile";
 
 const Home: NextPage = () => {
   return (
@@ -19,7 +20,7 @@ const Home: NextPage = () => {
           name="viewport"
           content="width=device-width,initial-scale=1,viewport-fit=cover"
         />
-        <meta http-equiv="x-ua-compatible" content="ie=edge" />
+        <meta httpEquiv="x-ua-compatible" content="ie=edge" />
         <link rel="dns-prefetch" href="https://www.google.com" />
         <link rel="dns-prefetch" href="https://www.google-analytics.com" />
         <meta property="og:site_name" content="Delmonte-Clone" />
@@ -80,6 +81,8 @@ const Home: NextPage = () => {
       <Navbar />
       <HomePage />
       <Products />
+      <Recipes />
+      <Profile />
     </div>
   );
 };

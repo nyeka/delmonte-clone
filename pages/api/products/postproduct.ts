@@ -1,6 +1,6 @@
 import { PrismaClient } from "@prisma/client";
 import { NextApiRequest, NextApiResponse } from "next";
-import { getSession } from "next-auth/react";
+import { getToken } from "next-auth/jwt";
 
 const Prisma = new PrismaClient();
 
@@ -9,8 +9,8 @@ export default async function handler(
   res: NextApiResponse
 ) {
   const { url, image, name } = req.body;
-  const session = await getSession({ req });
-  if (!session) {
+  const token = await getToken({ req });
+  if (!token) {
     res.status(401).json({ message: "Not Authenticated" });
     return;
   }

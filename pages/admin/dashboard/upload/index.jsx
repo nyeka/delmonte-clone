@@ -65,9 +65,11 @@ export default function index() {
 
   return (
     <>
-      <form onSubmit={handleSubmit}>
+      <form>
         <input type="file" name="image" onChange={handleFileSelected} />
-        <button type="submit">Upload image</button>
+        <button type="submit" onClick={handleSubmit}>
+          Upload image
+        </button>
         <input
           type="text"
           placeholder="name"
@@ -82,10 +84,8 @@ export default function index() {
             setProductsData({ ...productsData, url: e.target.value })
           }
         />
-        <button type="submit" onClick={handler}>
-          Submit
-        </button>
       </form>
+      <button onClick={handler}>Submit</button>
     </>
   );
 }
